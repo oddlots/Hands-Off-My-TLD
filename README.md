@@ -7,8 +7,20 @@ If you run local development environment with your own TLD (**.dev**, **.local**
 We have all gotten too lazy to type `http://` and so every major browser has some helper that decides when to search or retrieve a URL. It makes it so that `github.com` takes you to their site but `Maritime law` goes to your search engine. That's great when the browser recognizes your TLD. However, my preferred local (**.odd**) isn't recognized so I kept searching the google for `client1.odd`. Granted, it's only a minor annoyance but this Monday was the *wrong* day.
 
 ### Installation
+Waiting on Apple to have this up in the [Safari Extensions Gallery](https://safari-extensions.apple.com/).
 
-Install the Extension from the [Safari Extensions Gallery](https://safari-extensions.apple.com/details/?id=de.dreamlab.githubtower-R448YUR7UE) by clicking "Install now".
+Until then, you can install manually by:
+1) Clicking [here](https://github.com/lilolbear/Hands-Off-My-TLD/raw/master/Hands-off-my-TLD.safariextz) to download the **.safariextz** file.
+2) Find and click the file to get Safari to open it.
+3) Decide if you want to **Trust** it or wait until it's in the aforementioned Extensions Gallery.
+4) Assuming that you trusted it, then you can configure it.
+
+### Configuration
+option | default | description
+--- | --- | ---
+Protected TLDs (comma separated)  | `.odd, .local` | comma separated list of suffixes (TDLs) that the extension will look for.
+Use SSL | `false` | whether to prepend `http://` or `https://`
+Silence Alarm | `true` | mostly for debugging, this does a javascript alert when it captures a TLD
 
 ### Reference
 ##### Tech
