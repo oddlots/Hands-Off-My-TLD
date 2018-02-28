@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Sam Melton</string>
+	<key>Builder Version</key>
+	<string>13604.5.6</string>
+	<key>CFBundleDisplayName</key>
+	<string>Hands off my TLD</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.oddlots.safari.homtld</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>global.html</string>
+	</dict>
+	<key>Description</key>
+	<string>Intercepts searches to force Safari to treat URLs ending in your provided .TDL as a valid domain</string>
+	<key>DeveloperIdentifier</key>
+	<string>3LZS9388Q7</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Level</key>
+			<string>None</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>https://github.com/lilolbear/Hands-off-my-TLD.git</string>
+</dict>
+</plist>

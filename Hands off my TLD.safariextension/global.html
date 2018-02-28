@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Respect My TLD Extension</title>
+<script>
+const settings = safari.extension.settings
+safari.application.addEventListener("beforeSearch", alertBeforeSearch, false)
+settings.addEventListener("change", suffiChanged, false);
+
+function suffiChanged (event) {
+  if (event.key == 'suffixes') {
+      settings.trimixes = event.newValue.trim()
+  }
+}
+
+function alertBeforeSearch(event) {
+  const prefix = 'http' +
+    (true === settings['useSSL'] ? 's' : '' ) + '://'
+  var suffi = []
+  if (settings['trimixes'] != 'undefined') {
+    suffi = settings['trimixes'].split(/\s*,\s*/)
+  }
+
+  if (event.query && suffi.length) {
+    for(var suffix of suffi) {
+      if (event.query.endsWith(suffix)) {
+        event.preventDefault();
+        if ('true' === settings['hollar']) {
+          alert('\'' + suffix + '\' found! Call out the GoonSquad!')
+        }
+        safari.application.activeBrowserWindow.activeTab.url = prefix + event.query
+        break;
+      }
+    }
+  }
+}
+</script>

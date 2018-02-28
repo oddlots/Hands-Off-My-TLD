@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<string>.odd, .local</string>
+		<key>Key</key>
+		<string>suffixes</string>
+		<key>Title</key>
+		<string>Protected TLDs (comma separated)</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>.odd, .local</string>
+		<key>Key</key>
+		<string>trimixes</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>false</string>
+		<key>Key</key>
+		<string>useSSL</string>
+		<key>Title</key>
+		<string>Use SSL</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>false</string>
+		<key>FalseValue</key>
+		<string>true</string>
+		<key>Key</key>
+		<string>hollar</string>
+		<key>Title</key>
+		<string>Silence Alarm</string>
+		<key>TrueValue</key>
+		<string>false</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+</array>
+</plist>
